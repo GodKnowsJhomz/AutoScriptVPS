@@ -1,7 +1,6 @@
 #!/bin/bash
 # Original script by : fornesia, rzengineer and fawzya
 # Modified by : _Dreyannz_
-# Updated by : GodKnows Jhomz
 # ==================================================
 # Initializing Var
 export DEBIAN_FRONTEND=noninteractive
@@ -103,7 +102,7 @@ cp /etc/openvpn/easy-rsa/keys/ca.crt /etc/openvpn/ca.crt
 
 # Setting Server
 cd /etc/openvpn/
-wget "https://raw.githubusercontent.com/GodKnowsJhomz/AutoScriptVPS/master/OpenVPN/server.conf"
+wget "https://raw.githubusercontent.com/Dreyannz/AutoScriptVPS/master/Files/OpenVPN/server.conf"
 
 #Create OpenVPN Config
 cd
@@ -225,7 +224,7 @@ chmod +x screenfetch
 
 # Download Commands
 cd /usr/bin
-wget https://github.com/GodKnowsJhomz/AutoScriptVPS/raw/master/Files/AutoScript_Menu.tar.gz
+wget https://github.com/GodKnowsJhomz/AutoScriptVPS/raw/master/Files/Menu/AutoScript_Menu.tar.gz
 tar -xzvf AutoScript_Menu.tar.gz
 rm AutoScript_Menu.tar.gz
 sed -i -e 's/\r$//' accounts
@@ -270,7 +269,7 @@ echo "*0 */2 * * * root clearcache" > /etc/cron.d/clearcache
 
 # Set Permissions
 cd /usr/bin
-chmod +x create
+chmod +x menu
 chmod +x accounts
 chmod +x create
 chmod +x create_random
